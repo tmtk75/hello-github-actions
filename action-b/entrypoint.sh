@@ -1,2 +1,2 @@
 #!/bin/sh -l
-echo "echo by ACTION2" > /tmp/action-b.log
+echo "echo by ACTION2" > /github/workspace/action-b.log
