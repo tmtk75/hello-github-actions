@@ -15,4 +15,4 @@ echo "---- set ----"
 set
 
 echo "---- cat ----"
-cat /github/worksapce/action-b.log
+cat /github/workspace/action-b.log
