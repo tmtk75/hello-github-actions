@@ -4,3 +4,5 @@ sh -c "echo $*"
 
 ls /
 ls
+
+ls /github/workspace
