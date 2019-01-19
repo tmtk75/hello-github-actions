@@ -10,7 +10,7 @@ action "Hello World" {
   }
   args = "\"Hello world, I'm $MY_NAME!\""
 
-  needs = "ACTION2"
+  needs = "ACTION-B"
 
   # runs
   # secrets
@@ -25,7 +25,6 @@ action "Hello World" {
    */
 }
 
-action "ACTION2" {
-  uses = "./action-a"
-  args = "\"Hello world, I'm tmtk75!\""
+action "ACTION-B" {
+  uses = "./action-b"
 }

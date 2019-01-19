@@ -13,3 +13,6 @@ ls /github/workspace
 
 echo "---- set ----"
 set
+
+echo "---- cat ----"
+cat /tmp/action-b.log
