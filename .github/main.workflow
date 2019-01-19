@@ -25,7 +25,7 @@ action "Hello World" {
    */
 }
 
-action "ACTION-B" {
+action "ACTION-A" {
   uses = "./action-a"
 }
 
