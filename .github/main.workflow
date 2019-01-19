@@ -4,13 +4,13 @@ workflow "New workflow" {
 }
 
 action "Hello World" {
-  uses = "./action-a"
+  uses = "./action-hello"
   env = {
     MY_NAME = "Mona"
   }
   args = "\"Hello world, I'm $MY_NAME!\""
 
-  needs = "ACTION-B"
+  needs = ["ACTION-A", "ACTION-B"]
 
   # runs
   # secrets
@@ -23,6 +23,10 @@ action "Hello World" {
    *  - docker://{image}:{tag}
    *  - docker://{host}/{image}:{tag}
    */
+}
+
+action "ACTION-B" {
+  uses = "./action-a"
 }
 
 action "ACTION-B" {
