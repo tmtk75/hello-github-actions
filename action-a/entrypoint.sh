@@ -14,5 +14,3 @@ ls /github/workspace
 echo "---- set ----"
 set
 
-echo "---- cat ----"
-cat /github/workspace/action-b.log

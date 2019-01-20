@@ -1,2 +1,3 @@
 #!/bin/sh -l
-# NOP
+echo "---- cat ----"
+cat /github/workspace/action-b.log
